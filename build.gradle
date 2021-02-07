@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'com.dh'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    compile 'commons-logging:commons-logging:1.+'
+    compile  group: 'log4j', name: 'log4j', version: '1.2.17'
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.25'
+    compile 'com.rabbitmq:amqp-client:5.10.0'
+}
