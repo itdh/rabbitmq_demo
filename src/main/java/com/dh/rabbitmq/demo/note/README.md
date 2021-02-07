@@ -20,7 +20,7 @@
 docker search rabbitmq
 ```
 
-![1612667245927](./.assets\1612667245927.png)
+![1612667245927](./.assets/1612667245927.png)
 
 
 
@@ -32,7 +32,7 @@ docker search rabbitmq
 docker pull rabbitmq
 ```
 
-![1612667585482](./.assets\1612667585482.png)
+![1612667585482](./.assets/1612667585482.png)
 
 
 
@@ -42,7 +42,7 @@ docker pull rabbitmq
 docker images
 ```
 
-![1612667700847](./.assets\1612667700847.png)
+![1612667700847](./.assets/1612667700847.png)
 
 
 
@@ -52,7 +52,7 @@ docker images
 docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 -v `pwd`/data:/var/lib/rabbitmq --hostname myRabbit -e RABBITMQ_DEFAULT_VHOST=my_vhost  -e RABBITMQ_DEFAULT_USER=admin -e RABBITMQ_DEFAULT_PASS=admin c05fdf32bdad
 ```
 
-![1612668072696](./.assets\1612668072696.png)
+![1612668072696](./.assets/1612668072696.png)
 
 - 说明：
 
@@ -80,7 +80,7 @@ docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 -v `pwd`/data:/var/lib
 docker exec -it rabbit rabbitmq-plugins enable rabbitmq_management
 ```
 
-![1612668592076](./.assets\1612668592076.png)
+![1612668592076](./.assets/1612668592076.png)
 
 然后通过浏览器访问web管理端
 
@@ -88,7 +88,7 @@ docker exec -it rabbit rabbitmq-plugins enable rabbitmq_management
 http://ip:15672
 ```
 
-![1612670800306](./.assets\1612670800306.png)
+![1612670800306](./.assets/1612670800306.png)
 
 使用启动容器时指定的用户名和密码登录即可
 
