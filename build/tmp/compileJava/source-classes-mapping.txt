@@ -1,5 +1,0 @@
-com/dh/rabbitmq/demo/RabbitConsumer.java
- com.dh.rabbitmq.demo.RabbitConsumer
- com.dh.rabbitmq.demo.RabbitConsumer$1
-com/dh/rabbitmq/demo/RabbitProducer.java
- com.dh.rabbitmq.demo.RabbitProducer
